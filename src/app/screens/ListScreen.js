@@ -13,7 +13,7 @@ import EStyleSheet from 'react-native-extended-stylesheet';
 import dummyProduct from '../data/dummyProduct';
 import { toggleSelection } from "../store/actions/listAction";
 
-class HomeScreen extends Component {
+class ListScreen extends Component {
   constructor() {
     super();
     if (Platform.OS === 'android') {
@@ -85,4 +85,4 @@ const mapDispatchToProps = {
   toggleSelection
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(HomeScreen);
+export default connect(mapStateToProps, mapDispatchToProps)(ListScreen);

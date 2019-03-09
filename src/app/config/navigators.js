@@ -7,7 +7,7 @@ import {
     createBottomTabNavigator
 } from 'react-navigation';
 import {
-    HomeScreen,
+    ListScreen,
     ProfileScreen
 } from '../screens';
 import { DrawerMenu } from "../components";
@@ -36,7 +36,7 @@ const drawerConfigs = {
 
 const BottomTabNavigator = createBottomTabNavigator({
     Lists: {
-        screen: HomeScreen,
+        screen: ListScreen,
         navigationOptions: () => ({
             title: "Lists",
             tabBarIcon: ({ tintColor }) => (
@@ -49,7 +49,7 @@ const BottomTabNavigator = createBottomTabNavigator({
         })
     },
     Inspiration: {
-        screen: HomeScreen,
+        screen: ListScreen,
         navigationOptions: () => ({
             title: "Inspiration",
             tabBarIcon: ({ tintColor }) => (

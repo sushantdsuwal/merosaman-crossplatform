@@ -1,11 +1,11 @@
 import React from 'react';
-import { HomeScreen } from "./screens";
+import { ListScreen } from "./screens";
 
 // Root component 
 class App extends React.Component {
   render() {
     return (
-      <HomeScreen />
+      <ListScreen />
     );
   }
 }
