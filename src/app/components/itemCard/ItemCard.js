@@ -9,11 +9,12 @@ const ItemCard = (props) => {
         image,
         label,
         imageProps,
-        onPress
+        onPress,
+        containerStyle
     } = props;
     return (
         <TouchableOpacity activeOpacity={0.2} onPress={onPress}>
-            <View style={styles.itemWrapper}>
+            <View style={[styles.itemWrapper, containerStyle && containerStyle]}>
                 <Image
                     resizeMode="cover"
                     style={styles.image}

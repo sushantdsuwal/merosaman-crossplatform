@@ -8,7 +8,6 @@ import {
 } from 'react-navigation';
 import {
     ListScreen,
-    ProfileScreen
 } from '../screens';
 import { DrawerMenu } from "../components";
 import { Icon } from "../components";
@@ -62,7 +61,7 @@ const BottomTabNavigator = createBottomTabNavigator({
         })
     },
     Profile: {
-        screen: ProfileScreen,
+        screen: ListScreen,
         navigationOptions: () => ({
             title: "Profile",
             tabBarIcon: ({ tintColor }) => (

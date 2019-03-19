@@ -37,6 +37,7 @@ class ListScreen extends Component {
             key={item.ProductId}
             image={require('../assets/images/logo.png')}
             label={item.Name}
+            containerStyle={{ backgroundColor: 'orangered' }}
           />
         )
       }))
