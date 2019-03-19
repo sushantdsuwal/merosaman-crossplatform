@@ -25,4 +25,4 @@ const RegExr = {
     }
 }
 
-export default RegExp;
+export default RegExr;

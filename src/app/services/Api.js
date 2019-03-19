@@ -4,19 +4,14 @@ const DeviceId = "450aa";
 
 const GetHeader = async () => {
     const header = {
-        'Authorization': "Bearer " + await DeviceStorage.getKey("id_token"),
-        Accept: 'application/json',
-        'SessionCode': DeviceId
+
     }
     return header
 }
 
 const PostHeader = async () => {
     const header = {
-        'Authorization': "Bearer " + await DeviceStorage.getKey("id_token"),
-        'Content-Type': 'multipart/form-data',
-        Accept: 'application/json',
-        'SessionCode': DeviceId
+
     }
     return header
 }
@@ -31,7 +26,7 @@ const Api = {
     getData: async (url) => {
         return fetch(url, {
             method: 'GET',
-            headers: await GetHeader()
+            // headers: await GetHeader()
         })
             .then((res) => res.json())
             .catch((err) => {
@@ -42,7 +37,7 @@ const Api = {
     postData: async (url, body) => {
         return fetch(url, {
             method: 'POST',
-            headers: await PostHeader(),
+            // headers: await PostHeader(),
             body: serialize(body)
         })
             .then((res) => res.json())
